@@ -1,0 +1,242 @@
+[gd_scene load_steps=17 format=3 uid="uid://hj6sy0x67l8a"]
+
+[ext_resource type="Texture2D" uid="uid://bdc6mh3mjql8m" path="res://Assets/Environment/Tilesets/terrainTiles_default.png" id="1_3q2da"]
+[ext_resource type="Texture2D" uid="uid://wknhrd3fs7k8" path="res://Assets/Environment/Props/treeBrown_large.png" id="2_phmip"]
+[ext_resource type="Texture2D" uid="uid://b8wh05xricqs5" path="res://Assets/Environment/Props/treeGreen_large.png" id="3_v3u6a"]
+[ext_resource type="Texture2D" uid="uid://cm3dsi64o8f6s" path="res://Assets/Environment/Props/crateMetal.png" id="4_moa8x"]
+[ext_resource type="Texture2D" uid="uid://c7fbldykbyfnv" path="res://Assets/Environment/Props/crateWood.png" id="5_qdhls"]
+[ext_resource type="Texture2D" uid="uid://07p6667aflf2" path="res://Assets/Environment/Tilesets/Obstructed.png" id="6_jpxga"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b3yll"]
+texture = ExtResource("1_3q2da")
+texture_region_size = Vector2i(64, 64)
+2:0/0 = 0
+3:0/0 = 0
+5:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+9:1/0 = 0
+9:2/0 = 0
+9:3/0 = 0
+8:3/0 = 0
+8:2/0 = 0
+7:2/0 = 0
+7:3/0 = 0
+6:3/0 = 0
+6:2/0 = 0
+6:1/0 = 0
+5:1/0 = 0
+5:2/0 = 0
+5:3/0 = 0
+4:3/0 = 0
+4:2/0 = 0
+4:1/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+2:3/0 = 0
+2:2/0 = 0
+2:1/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+0:3/0 = 0
+0:2/0 = 0
+0:1/0 = 0
+0:1/0/terrain_set = 0
+0:1/0/terrain = 0
+0:1/0/terrains_peering_bit/right_side = 0
+0:1/0/terrains_peering_bit/bottom_right_corner = 0
+0:1/0/terrains_peering_bit/bottom_side = 0
+0:1/0/terrains_peering_bit/bottom_left_corner = 0
+0:1/0/terrains_peering_bit/left_side = 0
+0:1/0/terrains_peering_bit/top_left_corner = 0
+0:1/0/terrains_peering_bit/top_side = 0
+0:1/0/terrains_peering_bit/top_right_corner = 0
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/terrains_peering_bit/right_side = 0
+0:0/0/terrains_peering_bit/bottom_right_corner = 0
+0:0/0/terrains_peering_bit/bottom_side = 0
+0:0/0/terrains_peering_bit/bottom_left_corner = 0
+0:0/0/terrains_peering_bit/left_side = 0
+0:0/0/terrains_peering_bit/top_left_corner = 0
+0:0/0/terrains_peering_bit/top_side = 0
+0:0/0/terrains_peering_bit/top_right_corner = 0
+1:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_8k2ub"]
+tile_size = Vector2i(64, 64)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Grass"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+sources/0 = SubResource("TileSetAtlasSource_b3yll")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f1kj0"]
+texture = ExtResource("1_3q2da")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 0
+1:0/0/terrains_peering_bit/bottom_side = 0
+1:0/0/terrains_peering_bit/top_side = 0
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 0
+2:0/0/terrains_peering_bit/right_side = 0
+2:0/0/terrains_peering_bit/left_side = 0
+3:0/0 = 0
+3:0/0/terrain_set = 0
+3:0/0/terrain = 0
+3:0/0/terrains_peering_bit/right_side = 0
+3:0/0/terrains_peering_bit/bottom_side = 0
+3:0/0/terrains_peering_bit/top_side = 0
+4:0/0 = 0
+4:0/0/terrain_set = 0
+4:0/0/terrain = 0
+4:0/0/terrains_peering_bit/bottom_side = 0
+4:0/0/terrains_peering_bit/left_side = 0
+4:0/0/terrains_peering_bit/top_side = 0
+5:0/0 = 0
+5:0/0/terrain_set = 0
+5:0/0/terrain = 0
+5:0/0/terrains_peering_bit/right_side = 0
+5:0/0/terrains_peering_bit/left_side = 0
+5:0/0/terrains_peering_bit/top_side = 0
+6:0/0 = 0
+6:0/0/terrain_set = 0
+6:0/0/terrain = 0
+6:0/0/terrains_peering_bit/right_side = 0
+6:0/0/terrains_peering_bit/bottom_side = 0
+6:0/0/terrains_peering_bit/left_side = 0
+7:0/0 = 0
+7:0/0/terrain_set = 0
+8:0/0 = 0
+9:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/terrain = 0
+2:1/0/terrains_peering_bit/right_side = 0
+2:1/0/terrains_peering_bit/bottom_side = 0
+2:1/0/terrains_peering_bit/left_side = 0
+2:1/0/terrains_peering_bit/top_side = 0
+3:1/0 = 0
+3:1/0/terrain_set = 0
+3:1/0/terrain = 0
+3:1/0/terrains_peering_bit/right_side = 0
+3:1/0/terrains_peering_bit/bottom_side = 0
+4:1/0 = 0
+4:1/0/terrain_set = 0
+4:1/0/terrain = 0
+4:1/0/terrains_peering_bit/bottom_side = 0
+4:1/0/terrains_peering_bit/left_side = 0
+5:1/0 = 0
+5:1/0/terrain_set = 0
+5:1/0/terrain = 0
+5:1/0/terrains_peering_bit/right_side = 0
+5:1/0/terrains_peering_bit/top_side = 0
+6:1/0 = 0
+6:1/0/terrain_set = 0
+6:1/0/terrain = 0
+6:1/0/terrains_peering_bit/left_side = 0
+6:1/0/terrains_peering_bit/top_side = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7v0fl"]
+texture = ExtResource("2_phmip")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_acf11"]
+texture = ExtResource("3_v3u6a")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_30fte"]
+texture = ExtResource("4_moa8x")
+texture_region_size = Vector2i(28, 28)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yr2v1"]
+texture = ExtResource("5_qdhls")
+texture_region_size = Vector2i(28, 28)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dyuk2"]
+texture = ExtResource("6_jpxga")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_nv7yp"]
+tile_size = Vector2i(64, 64)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Road"
+terrain_set_0/terrain_0/color = Color(0.898039, 0.941176, 0.988235, 1)
+sources/0 = SubResource("TileSetAtlasSource_f1kj0")
+sources/1 = SubResource("TileSetAtlasSource_7v0fl")
+sources/2 = SubResource("TileSetAtlasSource_acf11")
+sources/3 = SubResource("TileSetAtlasSource_30fte")
+sources/4 = SubResource("TileSetAtlasSource_yr2v1")
+sources/5 = SubResource("TileSetAtlasSource_dyuk2")
+
+[sub_resource type="Curve2D" id="Curve2D_bgwnd"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -63, 551, -28.8146, 0.176777, 28.8146, -0.176777, 66, 551, -0.53033, 12.5511, 0.53033, -12.5511, 96, 520, 0, 25.6326, 0, -25.6326, 96, 389, -12.1976, 0, 12.1976, 0, 125, 359, -26.9695, 0.187288, 26.9695, -0.187288, 263, 359, 0, -13.1102, 0, 13.1102, 288, 383, 0, -23.9655, 0, 23.9655, 287, 454, -17.6588, 0, 17.6588, 0, 316, 487, -22.9144, 0, 22.9144, 0, 580, 487, 0, 13.8748, 0, -13.8748, 608, 453, -0.210224, 24.386, 0.210224, -24.386, 608, 379, -13.4543, 0, 13.4543, 0, 636, 359, -20.1815, 0, 20.1815, 0, 834, 359, 0, 15.977, 0, -15.977, 864, 328, 0, 19.1304, 0, -19.1304, 864, 133, -26.0678, -0.420448, 26.0678, 0.420448, 901, 103, -28.3803, -0.210224, 28.3803, 0.210224, 1215, 103, 0, -18.9202, 0, 18.9202, 1248, 131, 0.210224, -17.0282, -0.210224, 17.0282, 1248, 201, -17.4486, -0.210224, 17.4486, 0.210224, 1276, 231, 0, 0, 0, 0, 1339, 231)
+}
+point_count = 22
+
+[node name="Map1" type="Node2D"]
+
+[node name="Ground" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_8k2ub")
+cell_quadrant_size = 64
+format = 2
+layer_0/tile_data = PackedInt32Array(-1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, 20, 0, 0, 65556, 0, 0, 131092, 0, 0, 196628, 0, 0, 262164, 0, 0, 327700, 0, 0, 393236, 0, 0, 458772, 0, 0, 524308, 0, 0, 589844, 0, 0, 655380, 0, 0, 720916, 0, 0, 720915, 0, 0, 720914, 0, 0, 720913, 0, 0, 720912, 0, 0, 720911, 0, 0, 720910, 0, 0, 720909, 0, 0, 720908, 0, 0, 720907, 0, 0, 720906, 0, 0, 720905, 0, 0, 720904, 0, 0, 720903, 0, 0, 720902, 0, 0, 720901, 0, 0, 720900, 0, 0, 720899, 0, 0, 720898, 0, 0, 720897, 0, 0, 720896, 0, 0, 786431, 0, 0, 720895, 0, 0, 655359, 0, 0, 589823, 0, 0, 524287, 0, 0, 458751, 0, 0, 393215, 0, 0, 327679, 0, 0, 262143, 0, 0, 196607, 0, 0, 131071, 0, 0, 65535, 0, 0, 131079, 0, 0, 6, 0, 0, 5, 0, 0, 4, 0, 1, 3, 0, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 393216, 0, 0, 458752, 0, 0, 524288, 0, 0, 589824, 0, 1, 655360, 0, 0, 655361, 0, 1, 589825, 0, 0, 524289, 0, 0, 262145, 0, 0, 196609, 0, 0, 131073, 0, 0, 65538, 0, 0, 131074, 0, 1, 196610, 0, 1, 262146, 0, 0, 393218, 0, 0, 458754, 0, 0, 655362, 0, 0, 589827, 0, 0, 262147, 0, 0, 196611, 0, 0, 131075, 0, 1, 65539, 0, 0, 65540, 0, 0, 131076, 0, 0, 196612, 0, 1, 262148, 0, 1, 327684, 0, 0, 393220, 0, 0, 262149, 0, 0, 196613, 0, 0, 131077, 0, 1, 65541, 0, 0, 65542, 0, 0, 131078, 0, 1, 196614, 0, 0, 262150, 0, 0, 589830, 0, 0, 655367, 0, 0, 589831, 0, 0, 458759, 0, 0, 393224, 0, 0, 131080, 0, 0, 131081, 0, 0, 196617, 0, 0, 262153, 0, 0, 327689, 0, 0, 393225, 0, 0, 655368, 0, 0, 524297, 0, 0, 524298, 0, 0, 393226, 0, 0, 327690, 0, 0, 10, 0, 0, 131083, 0, 0, 589835, 0, 0, 589834, 0, 0, 655371, 0, 0, 393228, 0, 0, 262156, 0, 0, 131084, 0, 0, 65548, 0, 0, 12, 0, 0, 65549, 0, 0, 131085, 0, 1, 196621, 0, 0, 327693, 0, 0, 458765, 0, 0, 589837, 0, 0, 655374, 0, 0, 524302, 0, 0, 196622, 0, 0, 131086, 0, 0, 15, 0, 0, 65551, 0, 0, 131087, 0, 1, 196623, 0, 0, 589840, 0, 0, 458768, 0, 0, 262160, 0, 0, 196624, 0, 0, 131088, 0, 1, 65552, 0, 0, 16, 0, 1, 17, 0, 0, 65553, 0, 0, 131089, 0, 0, 589841, 0, 0, 655377, 0, 0, 655378, 0, 0, 589842, 0, 0, 196626, 0, 0, 131090, 0, 1, 65554, 0, 0, 18, 0, 1, 19, 0, 0, 65555, 0, 0, 131091, 0, 0, 196627, 0, 0, 262163, 0, 0, 327699, 0, 0, 458771, 0, 0, 524307, 0, 0, 589843, 0, 1, 655379, 0, 0, 65550, 0, 1, 14, 0, 1, 13, 0, 1, 327696, 0, 1, 327695, 0, 1, 262159, 0, 1, 262158, 0, 1, 262157, 0, 1, 327694, 0, 1, 393230, 0, 1, 393229, 0, 1, 458766, 0, 1, 458767, 0, 1, 393231, 0, 1, 393232, 0, 1, 393233, 0, 1, 327697, 0, 1, 262161, 0, 1, 196625, 0, 1, 262162, 0, 1, 327698, 0, 1, 393234, 0, 1, 458770, 0, 1, 458769, 0, 1, 524305, 0, 1, 524304, 0, 1, 524303, 0, 1, 589839, 0, 1, 589838, 0, 1, 655375, 0, 1, 655376, 0, 1, 524306, 0, 1, 393235, 0, 1, 262152, 0, 1, 196616, 0, 1, 196615, 0, 1, 262151, 0, 1, 327687, 0, 1, 327686, 0, 1, 327685, 0, 1, 393221, 0, 1, 458757, 0, 1, 458756, 0, 1, 458755, 0, 1, 393219, 0, 1, 327683, 0, 1, 327682, 0, 1, 327681, 0, 1, 327680, 0, 1, 262144, 0, 1, 196608, 0, 1, 131072, 0, 1, 65536, 0, 1, 65537, 0, 1, 393217, 0, 1, 458753, 0, 1, 524291, 0, 1, 524290, 0, 1, 589826, 0, 1, 524292, 0, 1, 589828, 0, 1, 655364, 0, 1, 655363, 0, 1, 655365, 0, 1, 589829, 0, 1, 524293, 0, 1, 524294, 0, 1, 458758, 0, 1, 393222, 0, 1, 393223, 0, 1, 524295, 0, 1, 524296, 0, 1, 458760, 0, 1, 458761, 0, 1, 458762, 0, 1, 458763, 0, 1, 393227, 0, 1, 327691, 0, 1, 262155, 0, 1, 196619, 0, 1, 196618, 0, 1, 131082, 0, 1, 65546, 0, 1, 65545, 0, 1, 9, 0, 1, 8, 0, 1, 7, 0, 1, 65543, 0, 1, 65544, 0, 1, 65547, 0, 1, 11, 0, 1, 262154, 0, 1, 196620, 0, 1, 327692, 0, 1, 524299, 0, 1, 524300, 0, 1, 458764, 0, 1, 589836, 0, 1, 655372, 0, 1, 655373, 0, 1, 524301, 0, 1, 589832, 0, 1, 589833, 0, 1, 655369, 0, 1, 655370, 0, 1, 655366, 0, 1, 327688, 0, 1)
+
+[node name="TowerExclusion" type="TileMap" parent="."]
+position = Vector2(0, 7)
+tile_set = SubResource("TileSet_nv7yp")
+cell_quadrant_size = 64
+format = 2
+layer_0/tile_data = PackedInt32Array(589823, 131072, 0, 524288, 131072, 0, 524289, 393216, 1, 458753, 65536, 0, 393217, 65536, 0, 327681, 196608, 1, 327682, 131072, 0, 327683, 131072, 0, 327684, 262144, 0, 262148, 65536, 0, 196612, 65536, 0, 131078, 131072, 0, 131076, 196608, 1, 131077, 131072, 0, 131079, 131072, 0, 458759, 131072, 0, 458758, 131072, 0, 393220, 65536, 0, 458756, 327680, 1, 458757, 131072, 0, 458760, 131072, 0, 458761, 393216, 1, 393225, 65536, 0, 327689, 196608, 0, 262153, 65536, 0, 196617, 65536, 0, 131081, 262144, 1, 131080, 131072, 0, 327690, 131072, 0, 327691, 131072, 0, 327692, 131072, 0, 327693, 393216, 1, 262157, 65536, 0, 196621, 65536, 0, 131085, 65536, 0, 65549, 196608, 1, 65550, 131072, 0, 65551, 131072, 0, 65552, 131072, 0, 65553, 131072, 0, 65554, 131072, 0, 65555, 262144, 1, 131091, 65536, 0, 196627, 327680, 1, 196628, 131072, 0, 655369, 1, 0, 1, 1, 0, 327695, 1, 0, 262150, 1, 0, 131083, 1, 0, 524304, 2, 0, 196608, 2, 0, 589835, 2, 0, 458765, 1, 0, 327687, 2, 0, 5, 4, 0, 655375, 4, 0, 262161, 4, 0, 655365, 3, 0, 589832, 3, 0, 131073, 3, 0, 65547, 4, 0, 327686, 3, 0)
+
+[node name="Path" type="Path2D" parent="."]
+curve = SubResource("Curve2D_bgwnd")
+
+[node name="Turrets" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
