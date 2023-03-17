@@ -49,20 +49,9 @@ func select_enemy():
 
 func fire():
 	fire_ready = false
-	if data.projectile == "gun":
-		fire_gun()
-	elif data.projectile == "missile":
-		fire_missile()
-	
 	enemy.on_hit(data.damage)
 	await get_tree().create_timer(data.fire_rate).timeout
 	fire_ready = true
-
-func fire_gun():
-	get_node("AnimationPlayer").play("fire")
-
-func fire_missile():
-	pass
 
 func get_type():
 	var script_path = get_script().get_path()

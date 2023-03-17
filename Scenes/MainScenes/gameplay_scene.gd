@@ -74,12 +74,12 @@ func start_next_wave():
 
 func retrieve_wave_data():
 	var wave_data = [
-		{"type": "blue_tank", "delay": .7},
-		{"type": "blue_tank", "delay": .7},
-		{"type": "blue_tank", "delay": .7},
-		{"type": "blue_tank", "delay": .7},
-		{"type": "blue_tank", "delay": .7},
-		{"type": "blue_tank", "delay": .7}
+		{"type": "ghost", "delay": .7},
+		{"type": "ghost", "delay": .7},
+		{"type": "ghost", "delay": .7},
+		{"type": "ghost", "delay": .7},
+		{"type": "ghost", "delay": .7},
+		{"type": "ghost", "delay": .7}
 	]
 	current_wave += 1
 	enemies_in_wave = wave_data.size()

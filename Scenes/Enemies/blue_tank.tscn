@@ -40,5 +40,3 @@ tint_under = Color(0.219608, 0.219608, 0.219608, 1)
 tint_progress = Color(0.203922, 0.658824, 0.301961, 1)
 
 [node name="Impact" type="Marker2D" parent="."]
-
-[node name="PathFollow2D" type="PathFollow2D" parent="."]
