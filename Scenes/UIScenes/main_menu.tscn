@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://di4roemiqc3p2"]
+[gd_scene load_steps=5 format=3 uid="uid://ctdq0dk0np4pi"]
 
-[ext_resource type="Texture2D" uid="uid://dwy5xnlkm5cdw" path="res://Assets/UI/Art/BackGround.png" id="1_mmekr"]
-[ext_resource type="Texture2D" uid="uid://cltsata3htcp6" path="res://Assets/UI/Buttons/blue_button03.png" id="2_beb2a"]
-[ext_resource type="Texture2D" uid="uid://bj5td51a8l7py" path="res://Assets/UI/Buttons/blue_button05.png" id="3_bp4k2"]
+[ext_resource type="Texture2D" uid="uid://dwy5xnlkm5cdw" path="res://PlaceholderAssets/UI/Art/BackGround.png" id="1_5gkqd"]
+[ext_resource type="Texture2D" uid="uid://cltsata3htcp6" path="res://PlaceholderAssets/UI/Buttons/blue_button03.png" id="2_dfr5a"]
+[ext_resource type="Texture2D" uid="uid://bj5td51a8l7py" path="res://PlaceholderAssets/UI/Buttons/blue_button05.png" id="3_c0hnl"]
 [ext_resource type="FontFile" uid="uid://bcp4cikx86187" path="res://Resources/Fonts/kfn_40_o1.tres" id="4_0iicr"]
 
 [node name="MainMenu" type="Control"]
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_mmekr")
+texture = ExtResource("1_5gkqd")
 expand_mode = 1
 
 [node name="M" type="MarginContainer" parent="."]
@@ -46,8 +46,8 @@ alignment = 1
 custom_minimum_size = Vector2(350, 75)
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("2_beb2a")
-texture_pressed = ExtResource("3_bp4k2")
+texture_normal = ExtResource("2_dfr5a")
+texture_pressed = ExtResource("3_c0hnl")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="M/VB/NewGame"]
@@ -71,8 +71,8 @@ vertical_alignment = 1
 custom_minimum_size = Vector2(350, 75)
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("2_beb2a")
-texture_pressed = ExtResource("3_bp4k2")
+texture_normal = ExtResource("2_dfr5a")
+texture_pressed = ExtResource("3_c0hnl")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="M/VB/Settings"]
@@ -96,8 +96,8 @@ vertical_alignment = 1
 custom_minimum_size = Vector2(350, 75)
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("2_beb2a")
-texture_pressed = ExtResource("3_bp4k2")
+texture_normal = ExtResource("2_dfr5a")
+texture_pressed = ExtResource("3_c0hnl")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="M/VB/About"]
@@ -125,8 +125,8 @@ layout_mode = 2
 custom_minimum_size = Vector2(350, 75)
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("2_beb2a")
-texture_pressed = ExtResource("3_bp4k2")
+texture_normal = ExtResource("2_dfr5a")
+texture_pressed = ExtResource("3_c0hnl")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="M/VB/Quit"]

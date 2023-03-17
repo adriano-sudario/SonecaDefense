@@ -1,6 +1,7 @@
 extends PathFollow2D
 
 signal base_damage(damage)
+signal on_destroy(enemy)
 
 var speed = 150
 var hp = 300
@@ -53,7 +54,8 @@ func impact():
 	impact_marker.add_child(new_impact)
 
 func destroy():
-	get_node("/root/SceneHandler/GameScene").earn_money(bounty)
+#	get_node("/root/SceneHandler/GameScene").earn_money(bounty)
+	emit_signal("on_destroy", self)
 	is_destroyed = true
 	health_bar.queue_free()
 	get_node("CharacterBody2D").queue_free()

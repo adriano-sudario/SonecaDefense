@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://cjdie0me8mciy"]
 
-[ext_resource type="Texture2D" uid="uid://so7awvty3jg0" path="res://Assets/Towers/towerDefense_tile180.png" id="1_aa5b5"]
 [ext_resource type="Script" path="res://Scenes/Turrets/missile_t_1.gd" id="1_bc1gh"]
-[ext_resource type="Texture2D" uid="uid://bus6nmotirik4" path="res://Assets/Towers/towerDefense_tile228.png" id="2_sne1s"]
-[ext_resource type="Texture2D" uid="uid://5ot64126ws63" path="res://Assets/Towers/towerDefense_tile251.png" id="3_awcjm"]
+[ext_resource type="Texture2D" uid="uid://so7awvty3jg0" path="res://PlaceholderAssets/Towers/towerDefense_tile180.png" id="2_cf1no"]
+[ext_resource type="Texture2D" uid="uid://bus6nmotirik4" path="res://PlaceholderAssets/Towers/towerDefense_tile228.png" id="3_5rjh5"]
+[ext_resource type="Texture2D" uid="uid://5ot64126ws63" path="res://PlaceholderAssets/Towers/towerDefense_tile251.png" id="4_ou7yn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fy2ij"]
 
@@ -11,18 +11,18 @@
 script = ExtResource("1_bc1gh")
 
 [node name="Base" type="Sprite2D" parent="."]
-texture = ExtResource("1_aa5b5")
+texture = ExtResource("2_cf1no")
 
 [node name="Turret" type="Sprite2D" parent="."]
-texture = ExtResource("2_sne1s")
+texture = ExtResource("3_5rjh5")
 
 [node name="Missile1" type="Sprite2D" parent="Turret"]
 position = Vector2(5, -10)
-texture = ExtResource("3_awcjm")
+texture = ExtResource("4_ou7yn")
 
 [node name="Missile2" type="Sprite2D" parent="Turret"]
 position = Vector2(5, 10)
-texture = ExtResource("3_awcjm")
+texture = ExtResource("4_ou7yn")
 
 [node name="Range" type="Area2D" parent="."]
 

@@ -1,29 +1,29 @@
 [gd_scene load_steps=8 format=3 uid="uid://bllmmyafko6rr"]
 
-[ext_resource type="Texture2D" uid="uid://8tnce6fw0tnw" path="res://Assets/Effects/Explosion/explosion1.png" id="1_b4uh3"]
-[ext_resource type="Texture2D" uid="uid://dvy2yejdjeh2n" path="res://Assets/Effects/Explosion/explosion2.png" id="2_417ku"]
-[ext_resource type="Texture2D" uid="uid://mapothmkjek" path="res://Assets/Effects/Explosion/explosion3.png" id="3_u4xk2"]
-[ext_resource type="Texture2D" uid="uid://dvuevbedynw3y" path="res://Assets/Effects/Explosion/explosion4.png" id="4_tyeeq"]
-[ext_resource type="Texture2D" uid="uid://b0vk57d1gvbr8" path="res://Assets/Effects/Explosion/explosion5.png" id="5_cxdtl"]
+[ext_resource type="Texture2D" uid="uid://8tnce6fw0tnw" path="res://PlaceholderAssets/Effects/Explosion/explosion1.png" id="1_broqa"]
+[ext_resource type="Texture2D" uid="uid://dvy2yejdjeh2n" path="res://PlaceholderAssets/Effects/Explosion/explosion2.png" id="2_1hda6"]
+[ext_resource type="Texture2D" uid="uid://mapothmkjek" path="res://PlaceholderAssets/Effects/Explosion/explosion3.png" id="3_0xkdt"]
+[ext_resource type="Texture2D" uid="uid://dvuevbedynw3y" path="res://PlaceholderAssets/Effects/Explosion/explosion4.png" id="4_55kdn"]
+[ext_resource type="Texture2D" uid="uid://b0vk57d1gvbr8" path="res://PlaceholderAssets/Effects/Explosion/explosion5.png" id="5_pgejo"]
 [ext_resource type="Script" path="res://Scenes/SupportScenes/projectile_impact.gd" id="6_4c258"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rr2ci"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_b4uh3")
+"texture": ExtResource("1_broqa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_417ku")
+"texture": ExtResource("2_1hda6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_u4xk2")
+"texture": ExtResource("3_0xkdt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_tyeeq")
+"texture": ExtResource("4_55kdn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_cxdtl")
+"texture": ExtResource("5_pgejo")
 }],
 "loop": false,
 "name": &"impact",

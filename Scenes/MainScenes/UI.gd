@@ -2,13 +2,13 @@ extends CanvasLayer
 
 @onready var hp_bar = get_node("HUD/InfoBar/HBoxContainer/TextureProgressBar")
 
-func set_tower_preview(tower_type, mouse_position):
-	var drag_tower = load("res://Scenes/Turrets/" + tower_type + ".tscn").instantiate()
+func set_tower_preview(toy_id, mouse_position):
+	var drag_tower = load("res://Scenes/Turrets/" + toy_id + ".tscn").instantiate()
 	drag_tower.set_name("DragTower")
 	
 	var range_texture = Sprite2D.new()
 	range_texture.position = Vector2(0, 0)
-	var scaling = GameData.tower_data[tower_type].range / 600.0
+	var scaling = GameData.toy[toy_id].range / 600.0
 	range_texture.scale = Vector2(scaling, scaling)
 	var texture = load("res://Assets/UI/range_overlay.png")
 	range_texture.texture = texture
@@ -51,7 +51,7 @@ func update_health_bar(base_health):
 func _on_play_pause_pressed():
 	var parent = get_parent()
 	
-	if parent.build_mode:
+	if parent.is_placing_toy:
 		parent.cancel_build_mode()
 	
 	if parent.current_wave == 0:
@@ -63,7 +63,7 @@ func _on_play_pause_pressed():
 
 
 func _on_speed_pressed():
-	if get_parent().build_mode:
+	if get_parent().is_placing_toy:
 		get_parent().cancel_build_mode()
 	
 	if Engine.get_time_scale() == 2:

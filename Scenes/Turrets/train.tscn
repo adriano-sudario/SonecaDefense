@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://c12m4gvchyb3c"]
+
+[ext_resource type="Script" path="res://Scenes/Turrets/train.gd" id="1_cir46"]
+[ext_resource type="Texture2D" uid="uid://ddfw4152dgej3" path="res://Assets/Toys/Train/train.png" id="2_26wvw"]
+[ext_resource type="Texture2D" uid="uid://0f1f4m3xcy27" path="res://PlaceholderAssets/Effects/towerDefense_tile297.png" id="3_1q5ap"]
+[ext_resource type="Texture2D" uid="uid://c5n1p81aikhsg" path="res://Assets/Toys/Train/train_projectile.png" id="3_g4i1e"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_70tdp"]
+
+[sub_resource type="Animation" id="Animation_hxrlb"]
+resource_name = "fire"
+length = 0.1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Turret/ProjectileSpawn/Sprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7s7nb"]
+_data = {
+"fire": SubResource("Animation_hxrlb")
+}
+
+[node name="Train" type="Node2D"]
+script = ExtResource("1_cir46")
+
+[node name="Base" type="Sprite2D" parent="."]
+texture = ExtResource("2_26wvw")
+
+[node name="Turret" type="Sprite2D" parent="."]
+position = Vector2(-14, 2)
+texture = ExtResource("3_g4i1e")
+centered = false
+offset = Vector2(-8, -9)
+
+[node name="ProjectileSpawn" type="Marker2D" parent="Turret"]
+position = Vector2(16, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="Turret/ProjectileSpawn"]
+visible = false
+position = Vector2(10, 0)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_1q5ap")
+
+[node name="Range" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range"]
+shape = SubResource("CircleShape2D_70tdp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7s7nb")
+}
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

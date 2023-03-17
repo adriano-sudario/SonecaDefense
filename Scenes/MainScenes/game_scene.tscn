@@ -1,18 +1,18 @@
 [gd_scene load_steps=14 format=3 uid="uid://bjngl04dfet77"]
 
-[ext_resource type="PackedScene" uid="uid://hj6sy0x67l8a" path="res://Scenes/Maps/map_1.tscn" id="1_dt83u"]
+[ext_resource type="PackedScene" uid="uid://dusqsgh5seooc" path="res://Scenes/Maps/map_1.tscn" id="1_dt83u"]
 [ext_resource type="Script" path="res://Scenes/MainScenes/game_scene.gd" id="1_vo8xu"]
-[ext_resource type="Texture2D" uid="uid://c728wf4x1nud1" path="res://Assets/UI/Buttons/blue_button12.png" id="2_mmu8a"]
-[ext_resource type="Texture2D" uid="uid://d06ac2ns7r8jm" path="res://Assets/Towers/towerDefense_tile249.png" id="3_kxxtn"]
 [ext_resource type="Script" path="res://Scenes/MainScenes/UI.gd" id="3_sgcl3"]
-[ext_resource type="Texture2D" uid="uid://5ot64126ws63" path="res://Assets/Towers/towerDefense_tile251.png" id="4_wiq2g"]
-[ext_resource type="Texture2D" uid="uid://tl74s1rj08n7" path="res://Assets/Icons/right.png" id="7_72k08"]
-[ext_resource type="Texture2D" uid="uid://dgm8s7hieivd4" path="res://Assets/Icons/pause.png" id="8_00nin"]
-[ext_resource type="Texture2D" uid="uid://ntep56wryfc8" path="res://Assets/Icons/fastForward.png" id="9_wl2ev"]
+[ext_resource type="Texture2D" uid="uid://c728wf4x1nud1" path="res://PlaceholderAssets/UI/Buttons/blue_button12.png" id="4_mrbyt"]
+[ext_resource type="Texture2D" uid="uid://d06ac2ns7r8jm" path="res://PlaceholderAssets/Towers/towerDefense_tile249.png" id="5_ax5gr"]
+[ext_resource type="Texture2D" uid="uid://5ot64126ws63" path="res://PlaceholderAssets/Towers/towerDefense_tile251.png" id="7_ra1bs"]
+[ext_resource type="Texture2D" uid="uid://tl74s1rj08n7" path="res://PlaceholderAssets/Icons/right.png" id="8_8c3t5"]
+[ext_resource type="Texture2D" uid="uid://dgm8s7hieivd4" path="res://PlaceholderAssets/Icons/pause.png" id="9_87f0i"]
+[ext_resource type="Texture2D" uid="uid://ntep56wryfc8" path="res://PlaceholderAssets/Icons/fastForward.png" id="10_jgom8"]
 [ext_resource type="FontFile" uid="uid://bydxd7feee1ww" path="res://Resources/Fonts/kfn_50_o1.tres" id="10_ut2yo"]
 [ext_resource type="FontFile" uid="uid://dplfcridsltv0" path="res://Resources/Fonts/kfn_30_o1.tres" id="11_fk4fj"]
-[ext_resource type="Texture2D" uid="uid://dev5oh0m8g2n8" path="res://Assets/Icons/home.png" id="12_lws8s"]
-[ext_resource type="Texture2D" uid="uid://d10lwowteli8n" path="res://Assets/UI/HPbar.jpg" id="13_fsdb8"]
+[ext_resource type="Texture2D" uid="uid://dev5oh0m8g2n8" path="res://PlaceholderAssets/Icons/home.png" id="12_r5mhq"]
+[ext_resource type="Texture2D" uid="uid://d10lwowteli8n" path="res://PlaceholderAssets/UI/HPbar.jpg" id="13_f2vpo"]
 
 [node name="GameScene" type="Node2D"]
 script = ExtResource("1_vo8xu")
@@ -54,7 +54,7 @@ custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture_normal = ExtResource("2_mmu8a")
+texture_normal = ExtResource("4_mrbyt")
 stretch_mode = 0
 
 [node name="Icon" type="TextureRect" parent="UI/HUD/BuildBar/Gun"]
@@ -63,7 +63,7 @@ offset_right = 80.0
 offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_kxxtn")
+texture = ExtResource("5_ax5gr")
 stretch_mode = 3
 
 [node name="CostLabel" type="Label" parent="UI/HUD/BuildBar/Gun"]
@@ -90,7 +90,7 @@ custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture_normal = ExtResource("2_mmu8a")
+texture_normal = ExtResource("4_mrbyt")
 stretch_mode = 0
 
 [node name="Icon" type="TextureRect" parent="UI/HUD/BuildBar/Missile"]
@@ -99,7 +99,7 @@ offset_right = 80.0
 offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_wiq2g")
+texture = ExtResource("7_ra1bs")
 stretch_mode = 3
 
 [node name="CostLabel" type="Label" parent="UI/HUD/BuildBar/Missile"]
@@ -137,8 +137,8 @@ layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
 toggle_mode = true
-texture_normal = ExtResource("7_72k08")
-texture_pressed = ExtResource("8_00nin")
+texture_normal = ExtResource("8_8c3t5")
+texture_pressed = ExtResource("9_87f0i")
 stretch_mode = 0
 
 [node name="Speed" type="TextureButton" parent="UI/HUD/GameControls"]
@@ -146,7 +146,7 @@ custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
-texture_normal = ExtResource("9_wl2ev")
+texture_normal = ExtResource("10_jgom8")
 stretch_mode = 0
 
 [node name="InfoBar" type="ColorRect" parent="UI/HUD"]
@@ -189,7 +189,7 @@ vertical_alignment = 1
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 2
 size_flags_horizontal = 10
-texture = ExtResource("12_lws8s")
+texture = ExtResource("12_r5mhq")
 expand_mode = 1
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="UI/HUD/InfoBar/HBoxContainer"]
@@ -198,8 +198,8 @@ layout_mode = 2
 size_flags_vertical = 4
 value = 100.0
 nine_patch_stretch = true
-texture_under = ExtResource("13_fsdb8")
-texture_progress = ExtResource("13_fsdb8")
+texture_under = ExtResource("13_f2vpo")
+texture_progress = ExtResource("13_f2vpo")
 tint_under = Color(0.215686, 0.215686, 0.215686, 1)
 tint_progress = Color(0.305882, 1, 0.0823529, 1)
 

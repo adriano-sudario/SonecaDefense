@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://c6rv7m7ab6rrk"]
 
-[ext_resource type="Texture2D" uid="uid://b1wbhhmjky4qe" path="res://Assets/Towers/towerDefense_tile181.png" id="1_an0sl"]
 [ext_resource type="Script" path="res://Scenes/Turrets/gun_t_1.gd" id="1_j8yge"]
-[ext_resource type="Texture2D" uid="uid://d06ac2ns7r8jm" path="res://Assets/Towers/towerDefense_tile249.png" id="2_xrg6c"]
-[ext_resource type="Texture2D" uid="uid://0f1f4m3xcy27" path="res://Assets/Effects/towerDefense_tile297.png" id="4_m7lbg"]
+[ext_resource type="Texture2D" uid="uid://b1wbhhmjky4qe" path="res://PlaceholderAssets/Towers/towerDefense_tile181.png" id="2_ubftw"]
+[ext_resource type="Texture2D" uid="uid://d06ac2ns7r8jm" path="res://PlaceholderAssets/Towers/towerDefense_tile249.png" id="3_kditn"]
+[ext_resource type="Texture2D" uid="uid://0f1f4m3xcy27" path="res://PlaceholderAssets/Effects/towerDefense_tile297.png" id="4_reffv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4gky7"]
 
@@ -14,7 +14,7 @@ step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Turret/Muzzle/Sprite2D:visible")
+tracks/0/path = NodePath("Turret/ProjectileSpawn/Sprite2D:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -33,20 +33,19 @@ _data = {
 script = ExtResource("1_j8yge")
 
 [node name="Base" type="Sprite2D" parent="."]
-texture = ExtResource("1_an0sl")
+texture = ExtResource("2_ubftw")
 
 [node name="Turret" type="Sprite2D" parent="."]
-texture = ExtResource("2_xrg6c")
+texture = ExtResource("3_kditn")
 offset = Vector2(12, 0)
 
 [node name="Muzzle" type="Marker2D" parent="Turret"]
 position = Vector2(43, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Turret/Muzzle"]
-visible = false
 position = Vector2(10, 0)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("4_m7lbg")
+texture = ExtResource("4_reffv")
 
 [node name="Range" type="Area2D" parent="."]
 
