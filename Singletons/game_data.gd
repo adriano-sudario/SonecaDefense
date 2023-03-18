@@ -26,8 +26,8 @@ var tower_data = {
 
 var toy = {
 	"train": {
-		"damage": 20,
-		"fire_rate": .2,
+		"damage": 50,
+		"fire_rate": 2,
 		"range": 350,
 		"price": 100,
 		"projectile": "train_projectile"
@@ -37,7 +37,7 @@ var toy = {
 var enemy = {
 	"ghost": {
 		"speed": 150,
-		"health_points": 300,
+		"health_points": 100,
 		"damage": 20,
 		"bounty": 50
 	}

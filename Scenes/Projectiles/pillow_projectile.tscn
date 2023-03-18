@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcl8a1scbrw5m"]
+
+[ext_resource type="Script" path="res://Scenes/Projectiles/pillow_projectile.gd" id="1_4nbyi"]
+[ext_resource type="Texture2D" uid="uid://danka3ad8wuy6" path="res://Assets/Projectiles/projetil_travesseiro.png" id="1_x2a3r"]
+
+[sub_resource type="Animation" id="Animation_0v4to"]
+resource_name = "flying"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.28319]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_leenf"]
+_data = {
+"flying": SubResource("Animation_0v4to")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h7xth"]
+size = Vector2(16, 16)
+
+[node name="PillowProjectile" type="Area2D"]
+script = ExtResource("1_4nbyi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_x2a3r")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_leenf")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_h7xth")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

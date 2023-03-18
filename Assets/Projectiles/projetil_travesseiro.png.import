@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5n1p81aikhsg"
-path="res://.godot/imported/train_projectile.png-a5588314ee3a75f8a539ee8ce8068433.ctex"
+uid="uid://danka3ad8wuy6"
+path="res://.godot/imported/projetil_travesseiro.png-5bec695d8e3229f14f529f6445511fec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Toys/Train/train_projectile.png"
-dest_files=["res://.godot/imported/train_projectile.png-a5588314ee3a75f8a539ee8ce8068433.ctex"]
+source_file="res://Assets/Projectiles/projetil_travesseiro.png"
+dest_files=["res://.godot/imported/projetil_travesseiro.png-5bec695d8e3229f14f529f6445511fec.ctex"]
 
 [params]
 

@@ -1,5 +1,10 @@
 extends Node2D
 
+#@onready var game_play_node = get_node("/root/SceneHandler/GameplayScene")
+@onready var game_play_node = get_tree().current_scene.get_node("GameplayScene")
+@onready var turret_node = get_node("Turret")
+@onready var projectile_spawn = turret_node.get_node("ProjectileSpawn")
+
 var enemies = []
 var built = false
 var fire_ready = true
@@ -49,9 +54,18 @@ func select_enemy():
 
 func fire():
 	fire_ready = false
-	enemy.on_hit(data.damage)
+	turret_node.get_node("AnimationPlayer").play("preparing_shoot")
 	await get_tree().create_timer(data.fire_rate).timeout
 	fire_ready = true
+
+func fire_projectile(projectile_name):
+	turret_node.get_node("AnimationPlayer").play("preparing_shoot")
+	var projectile = load("res://Scenes/Projectiles/" + projectile_name + ".tscn").instantiate()
+	projectile.position = projectile_spawn.global_position
+	projectile.damage = data.damage
+#	projectile.direction_angle = projectile.position.direction_to(enemy.position).angle()
+	projectile.enemy = enemy
+	game_play_node.map_node.add_child(projectile)
 
 func get_type():
 	var script_path = get_script().get_path()
@@ -59,9 +73,12 @@ func get_type():
 	return directories[directories.size() - 1].split(".")[0]
 
 func turn():
-	get_node("Turret").look_at(enemy.position)
+	turret_node.look_at(enemy.position)
 
 func _on_range_body_entered(body):
+	if not body.is_in_group("enemies"):
+		return
+	
 	enemies.append(body.get_parent())
 
 func _on_range_body_exited(body):
