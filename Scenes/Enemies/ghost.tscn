@@ -50,6 +50,7 @@ libraries = {
 }
 
 [node name="HealthBar" type="TextureProgressBar" parent="."]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

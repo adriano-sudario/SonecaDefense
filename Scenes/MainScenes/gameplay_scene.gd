@@ -90,7 +90,7 @@ func spawn_enemies(wave_data):
 		var enemy = load("res://Scenes/Enemies/" + i.type + ".tscn").instantiate()
 		enemy.base_damage.connect(on_base_damage)
 		enemy.on_destroy.connect(on_enemy_destroyed)
-		enemy.load(i.type)
+		enemy.load_data(i.type)
 		path_node.add_child(enemy, true)
 		await get_tree().create_timer(i.delay).timeout
 

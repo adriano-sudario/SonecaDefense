@@ -26,7 +26,7 @@ var tower_data = {
 
 var toy = {
 	"train": {
-		"damage": 50,
+		"damage": 35,
 		"fire_rate": 2,
 		"range": 350,
 		"price": 100,

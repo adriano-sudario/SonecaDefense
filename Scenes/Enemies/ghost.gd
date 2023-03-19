@@ -20,8 +20,8 @@ func _ready():
 	health_bar.top_level = true
 	get_node("CharacterBody2D/AnimationPlayer").play("moving")
 
-func load(name):
-	var data = GameData.enemy[name]
+func load_data(enemy_name):
+	var data = GameData.enemy[enemy_name]
 	speed = data.speed
 	hp = data.health_points
 	attack_damage = data.damage
