@@ -34,7 +34,7 @@ func _on_body_entered(body):
 	
 	var target = body.get_parent()
 	target.on_hit(damage)
-	var bubbles = load("res://Scenes/Projectiles/bubble_particles.tscn").instantiate()
+	var bubbles = load("res://Scenes/Particles/bubble_particles.tscn").instantiate()
 	bubbles.position = global_position
 	gameplay_map_node.add_child(bubbles)
 	queue_free()

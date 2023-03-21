@@ -1,15 +1,19 @@
-[gd_scene load_steps=13 format=3 uid="uid://5tutxp0h05m0"]
+[gd_scene load_steps=17 format=3 uid="uid://5tutxp0h05m0"]
 
 [ext_resource type="Script" path="res://Scenes/MainScenes/UI.gd" id="1_jno23"]
 [ext_resource type="Script" path="res://Scenes/MainScenes/gameplay_scene.gd" id="1_uyr3c"]
 [ext_resource type="Texture2D" uid="uid://c728wf4x1nud1" path="res://PlaceholderAssets/UI/Buttons/blue_button12.png" id="2_civb6"]
 [ext_resource type="FontFile" uid="uid://dplfcridsltv0" path="res://Resources/Fonts/kfn_30_o1.tres" id="4_y7wgn"]
+[ext_resource type="Texture2D" uid="uid://c5n1p81aikhsg" path="res://Assets/Toys/Train/train_cannon.png" id="5_vecj1"]
 [ext_resource type="Texture2D" uid="uid://nefw0bgrapq7" path="res://Assets/Toys/Bear/bear.png" id="6_88xrn"]
 [ext_resource type="Texture2D" uid="uid://tl74s1rj08n7" path="res://PlaceholderAssets/Icons/right.png" id="6_lcacb"]
 [ext_resource type="Texture2D" uid="uid://ddfw4152dgej3" path="res://Assets/Toys/Train/train.png" id="6_xi0so"]
+[ext_resource type="Texture2D" uid="uid://0aajv3nqhidt" path="res://Assets/Toys/Bear/bear_gun.png" id="7_bsj3k"]
 [ext_resource type="Texture2D" uid="uid://dgm8s7hieivd4" path="res://PlaceholderAssets/Icons/pause.png" id="7_srr1m"]
 [ext_resource type="Texture2D" uid="uid://ntep56wryfc8" path="res://PlaceholderAssets/Icons/fastForward.png" id="8_7yaiv"]
+[ext_resource type="Texture2D" uid="uid://c6i4eprqqqji" path="res://Assets/Toys/Dragon/dragon_body.png" id="8_vpanr"]
 [ext_resource type="FontFile" uid="uid://bydxd7feee1ww" path="res://Resources/Fonts/kfn_50_o1.tres" id="9_a6073"]
+[ext_resource type="Texture2D" uid="uid://7xavmjuhnt1j" path="res://Assets/Toys/Dragon/dragon_head.png" id="9_frkqv"]
 [ext_resource type="Texture2D" uid="uid://dev5oh0m8g2n8" path="res://PlaceholderAssets/Icons/home.png" id="10_xx0al"]
 [ext_resource type="Texture2D" uid="uid://d10lwowteli8n" path="res://PlaceholderAssets/UI/HPbar.jpg" id="11_uyfyc"]
 
@@ -63,6 +67,17 @@ grow_vertical = 2
 texture = ExtResource("6_xi0so")
 stretch_mode = 3
 
+[node name="Icon2" type="TextureRect" parent="UI/HUD/BuildBar/Train"]
+layout_mode = 2
+offset_left = -5.0
+offset_top = 4.0
+offset_right = 75.0
+offset_bottom = 84.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_vecj1")
+stretch_mode = 3
+
 [node name="CostLabel" type="Label" parent="UI/HUD/BuildBar/Train"]
 visible = false
 layout_mode = 1
@@ -100,7 +115,68 @@ grow_vertical = 2
 texture = ExtResource("6_88xrn")
 stretch_mode = 3
 
+[node name="Icon2" type="TextureRect" parent="UI/HUD/BuildBar/Bear"]
+layout_mode = 2
+offset_left = -21.0
+offset_top = 8.0
+offset_right = 59.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_bsj3k")
+stretch_mode = 3
+
 [node name="CostLabel" type="Label" parent="UI/HUD/BuildBar/Bear"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -25.0
+offset_right = 24.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_y7wgn")
+theme_override_font_sizes/font_size = 10
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dragon" type="TextureButton" parent="UI/HUD/BuildBar" groups=["build_buttons"]]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("2_civb6")
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/HUD/BuildBar/Dragon"]
+layout_mode = 2
+offset_left = -2.0
+offset_top = 8.0
+offset_right = 78.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_vpanr")
+stretch_mode = 3
+
+[node name="Icon2" type="TextureRect" parent="UI/HUD/BuildBar/Dragon"]
+layout_mode = 2
+offset_left = 5.0
+offset_top = -14.0
+offset_right = 85.0
+offset_bottom = 66.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_frkqv")
+stretch_mode = 3
+
+[node name="CostLabel" type="Label" parent="UI/HUD/BuildBar/Dragon"]
 visible = false
 layout_mode = 1
 anchors_preset = 7

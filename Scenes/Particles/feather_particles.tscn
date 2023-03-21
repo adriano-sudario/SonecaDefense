@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://b256mc73p8dwu"]
+[gd_scene load_steps=9 format=3 uid="uid://b02ocmcnwi26w"]
 
-[ext_resource type="Texture2D" uid="uid://ca6xbf5fop236" path="res://Assets/Projectiles/feather.png" id="1_0gbie"]
-[ext_resource type="Script" path="res://Scenes/Projectiles/feather_particles.gd" id="2_a6sbd"]
+[ext_resource type="Texture2D" uid="uid://ca6xbf5fop236" path="res://Assets/Projectiles/feather.png" id="1_52ehr"]
+[ext_resource type="Script" path="res://Scenes/Particles/feather_particles.gd" id="2_mk0vj"]
 
 [sub_resource type="Curve" id="Curve_ifjhe"]
 min_value = -360.0
@@ -44,11 +44,11 @@ radius = 60.0
 emitting = false
 amount = 50
 process_material = SubResource("ParticleProcessMaterial_yfavp")
-texture = ExtResource("1_0gbie")
+texture = ExtResource("1_52ehr")
 lifetime = 1.5
 one_shot = true
 explosiveness = 1.0
-script = ExtResource("2_a6sbd")
+script = ExtResource("2_mk0vj")
 
 [node name="Area" type="Area2D" parent="."]
 

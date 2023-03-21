@@ -2,9 +2,7 @@ extends Node2D
 
 @onready var gameplay_map_node = get_tree().current_scene.get_node("GameplayScene").map_node
 
-var speed = 350
-#var direction_angle = 0
-#var direction
+var speed = 400
 var damage = 0
 var enemy
 
@@ -16,7 +14,6 @@ func _ready():
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_ease(Tween.EASE_IN_OUT)
 	get_node("AnimationPlayer").play("flying")
-#	direction = Vector2.RIGHT.rotated(direction_angle)
 	pass
 
 func _process(delta):
@@ -32,8 +29,9 @@ func _on_body_entered(body):
 	if not body.is_in_group("enemies"):
 		return
 	
-	var feathers = load("res://Scenes/Particles/feather_particles.tscn").instantiate()
-	feathers.position = global_position
-	feathers.damage = damage
-	gameplay_map_node.call_deferred("add_child", feathers)
+	var target = body.get_parent()
+	target.on_hit(damage)
+	var bubbles = load("res://Scenes/Particles/fire_particles.tscn").instantiate()
+	bubbles.position = global_position
+	gameplay_map_node.add_child(bubbles)
 	queue_free()
