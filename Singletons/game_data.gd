@@ -31,6 +31,13 @@ var toy = {
 		"range": 350,
 		"price": 100,
 		"projectile": "train_projectile"
+	},
+	"bear": {
+		"damage": 10,
+		"fire_rate": .2,
+		"range": 300,
+		"price": 100,
+		"projectile": "train_projectile"
 	}
 }
 

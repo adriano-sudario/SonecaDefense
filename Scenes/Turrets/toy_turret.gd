@@ -34,6 +34,9 @@ func _physics_process(_delta):
 		enemy = null
 
 func _process(_delta):
+	update_facing_direction()
+
+func update_facing_direction():
 	if enemy == null:
 		return
 	

@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://5tutxp0h05m0"]
+[gd_scene load_steps=13 format=3 uid="uid://5tutxp0h05m0"]
 
 [ext_resource type="Script" path="res://Scenes/MainScenes/UI.gd" id="1_jno23"]
 [ext_resource type="Script" path="res://Scenes/MainScenes/gameplay_scene.gd" id="1_uyr3c"]
 [ext_resource type="Texture2D" uid="uid://c728wf4x1nud1" path="res://PlaceholderAssets/UI/Buttons/blue_button12.png" id="2_civb6"]
 [ext_resource type="FontFile" uid="uid://dplfcridsltv0" path="res://Resources/Fonts/kfn_30_o1.tres" id="4_y7wgn"]
+[ext_resource type="Texture2D" uid="uid://nefw0bgrapq7" path="res://Assets/Toys/Bear/bear.png" id="6_88xrn"]
 [ext_resource type="Texture2D" uid="uid://tl74s1rj08n7" path="res://PlaceholderAssets/Icons/right.png" id="6_lcacb"]
 [ext_resource type="Texture2D" uid="uid://ddfw4152dgej3" path="res://Assets/Toys/Train/train.png" id="6_xi0so"]
 [ext_resource type="Texture2D" uid="uid://dgm8s7hieivd4" path="res://PlaceholderAssets/Icons/pause.png" id="7_srr1m"]
@@ -63,6 +64,43 @@ texture = ExtResource("6_xi0so")
 stretch_mode = 3
 
 [node name="CostLabel" type="Label" parent="UI/HUD/BuildBar/Train"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -25.0
+offset_right = 24.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_y7wgn")
+theme_override_font_sizes/font_size = 10
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bear" type="TextureButton" parent="UI/HUD/BuildBar" groups=["build_buttons"]]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("2_civb6")
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/HUD/BuildBar/Bear"]
+layout_mode = 2
+offset_right = 80.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_88xrn")
+stretch_mode = 3
+
+[node name="CostLabel" type="Label" parent="UI/HUD/BuildBar/Bear"]
 visible = false
 layout_mode = 1
 anchors_preset = 7
